@@ -256,7 +256,7 @@
     <div id="addStaffModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2>Add Staff</h2>
+            <h2>Add Staff!</h2>
             <form id="addStaffForm" action="/addstaff" method="POST">
                 @csrf
                 <label for="staffId">Staff ID:</label><br>
