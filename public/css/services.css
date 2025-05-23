@@ -7,7 +7,7 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 body{
-background-color: #333f45;
+background-color: #fff;
 }
 .heads{
 margin-bottom: -100px;
@@ -17,7 +17,7 @@ background:linear-gradient(to bottom, rgb(20, 24, 31), transparent) ,url('/image
 h1{
 text-align: center;
 margin-top: 50px;
-color: #fff;
+color: #FDA929;
 font-size: 36px;
 font-weight: 500;
 }
@@ -34,6 +34,7 @@ display: flex;
 margin: auto;
 position: relative;
 justify-content: space-evenly;
+margin-bottom: 40px;
 }
 @media (max-width: 768px) {
 .servicecontainer {
@@ -59,7 +60,7 @@ margin-bottom: 40px; /* Add space between services */
 border-radius: 10px;
 width: 75%;
 padding: 30px 00px 0px 20px;
-background-color: #55666F;
+background-color: #556fa6;
 text-align: justify;
 margin-left: 20px;
 color: #ffffff;

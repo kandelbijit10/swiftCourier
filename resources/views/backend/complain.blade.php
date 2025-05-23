@@ -154,9 +154,9 @@
         </aside>
         <main class="main-content">
             <header class="main-header">
-                <h1>Complaints Management</h1>
+                <h1>Contact and Complain Management</h1>
                 <div class="user-profile">
-                    <img src="profile-icon.png" alt="User Profile">
+                    <img src="{{asset('images/bijit.jpeg')}}" alt="User Profile">
                 </div>
             </header>
             <section class="complaints-management">

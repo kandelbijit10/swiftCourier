@@ -2,11 +2,11 @@
 <footer>
     <!-- <div class="footer"> -->
         <div class="companydetails">
-            <img src="images/bee-trio-trackers-high-resolution-logo.png" alt="" id="logo">
+            <img src="images/swiftlogo.png" alt="" id="logo">
             <p>Head Office:</p>
-            <img src="images/phone-call.png" alt=""><span>+977-98000000</span> <br>
-            <img src="images/email.png" alt=""><span>example@email.com</span><br>
-            <img src="images/pin.png" alt=""><span>Gaindakot-2,     Nawalpur</span><br>
+            <img src="images/phone-call.png" alt=""><span>+977-9855016233</span> <br>
+            <img src="images/email.png" alt=""><span>Swiftcourier@email.com</span><br>
+            <img src="images/pin.png" alt=""><span>Bharatpur-3,Chitwan</span><br>
         </div>
         <div class="quicklinks">
             <h3>Our Menu</h3>

@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body{
-    background-color: #333f45;
+    background-color: #a1b7d0;
 }
 .heads{
     margin-bottom: -150px;
@@ -42,6 +42,7 @@ body{
 .row{
     display: flex;
     justify-content: center ;
+    padding-bottom: 40px;
 }
 .row h2{
     margin-bottom: 20px;
@@ -78,12 +79,12 @@ body{
             margin: 80px auto 50px;
             padding: 20px;
             gap: 20px; /* Consistent spacing between slots */
-            background-color: #333f45; /* Optional: Match background with body */
+            background-color: #2c434e; /* Optional: Match background with body */
             border-radius: 8px;
 
 }
 .sec{
-    background-color: #55666F;
+    background-color: #556fa6;
             padding: 25px 0px;
             color: #ffffff;
             flex: 1 1 30%; /* Allows the .sec elements to grow and shrink */
@@ -107,8 +108,8 @@ body{
 .slot2{
     text-align: justify;
             padding: 25px;
-            color: #ffffff;
-            background-color: #55666F;
+            color: black;
+            background-color: #fff;
             border-radius: 8px;     
 }
 .slot1, .slot2 {
@@ -121,7 +122,7 @@ body{
             border-radius: 8px; /* Optional: Rounded corners */
         }
 .slot2 h2{
-    color: #FDA929;
+    color: #2563eb;
     font-weight: 500;
     text-align: center;
     padding: 20px;
@@ -197,7 +198,7 @@ body{
 /* Team Section Styles */
 #team {
     text-align: center;
-    color: #fda929;
+    color: #556fa6;
     margin: 40px 0 20px 0; /* Added margin for spacing */
 }
 
@@ -211,7 +212,7 @@ body{
 }
 
 .column {
-    background-color: #55666F; /* Optional: Background for better visibility */
+    background-color: #556fa6; /* Optional: Background for better visibility */
     padding: 20px;
     border-radius: 8px; /* Optional: Rounded corners */
     text-align: center;

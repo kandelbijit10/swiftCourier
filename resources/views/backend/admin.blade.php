@@ -161,7 +161,7 @@ body {
             <header class="main-header">
                 <h1>Dashboard</h1>
                 <div class="user-profile">
-                    <img src="profile-icon.png" alt="User Profile">
+                    <img src="{{asset('images/bijit.jpeg')}}" alt="User Profile">
                 </div>
             </header>
             <section class="dashboard">

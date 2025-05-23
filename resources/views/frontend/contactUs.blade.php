@@ -43,21 +43,21 @@
             <h2>Get in touch</h2>
             <ul>
                 <li>Phone:
-                    <br>+977-9800000000
+                    <br>+977-9855016233
                     <dd>Available Monday to Friday, 9 AM to 6 PM</dd>
                 </li>
                 <li>Email:
-                    <br>support@beetriotrackers.com
+                    <br>Swiftcourier@gmail.com
                     <dd>We respond within 24 hours</dd>
                 </li>
                 <li>Address:
-                    <br>Bee Trio Trackers
-                    <dd>Gaindakot-2, Nawalpur</dd>
+                    <br>Swift courier
+                    <dd>Bharatour-03, Chitwan</dd>
                 </li>
             </ul>
             <div class="p">
                 <p>
-                    For support-related queries, contact us at support@beetriotrackers.com or call +977-9800000000
+                    For support-related queries, contact us at Swiftcourier@gmail.com or call +977-9855016233
                 </p>
                 <p>
                     We look forward to hearing from you!

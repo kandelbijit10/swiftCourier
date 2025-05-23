@@ -18,7 +18,7 @@ body {
 .landing-section {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(66, 80, 60), transparent), url('/images/courier.jpg');
+    background-image: linear-gradient(to bottom, rgb(66, 80, 60), transparent), url('/images/courier.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,6 +128,7 @@ body {
     color: #333; /* Dark text for readability */
     padding: 50px 10%;
     text-align: center;
+    background: white;
 }
 
 .about-section h1 {
@@ -135,6 +136,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1.5em;
+    color: #2563eb;
 }
 
 .about {
@@ -149,6 +151,7 @@ body {
     flex: 1 1 45%;
     text-align: justify;
     margin-right: 30px;
+    color: #000;
 }
 
 .abouttxt p {
@@ -179,7 +182,7 @@ body {
 
 /* Services Section */
 .services-section {
-    background-color: #333F45;
+    background-color: #fff;
     padding: 50px 10%;
     text-align: center;
 }
@@ -189,7 +192,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 2em;
-    color: #fff;
+    color: #2563eb;
 }
 
 #service-list {
@@ -200,7 +203,7 @@ body {
 }
 
 .services {
-    background-color: #55666F;
+    background-color: #4265af;
     padding: 20px;
     flex: 1 1 30%;
     text-align: left;
@@ -209,6 +212,7 @@ body {
     transition: transform 0.3s ease;
     color: #fff;
 }
+
 
 .services img {
     width: 100%;
@@ -263,7 +267,7 @@ body {
 /* Contact Section */
 .contact-section {
     padding: 50px 10%;
-    background-color: #333F45;
+    background-color: #9ebfd0;
     color: #fff;
 }
 
@@ -271,6 +275,7 @@ body {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 2em;
+    color: #2563eb;
 }
 
 .contactarea {
@@ -279,7 +284,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #55666F;
+    background-color: #4265af;
     padding: 20px;
     border-radius: 10px;
 }
@@ -341,7 +346,8 @@ body {
 .contactimg img {
     margin-top: 40px;
     width: 90%;
-    height: auto;
+    height: 450px;
+    object-fit: cover;
     border-radius: 10px;
 }
 

@@ -19,7 +19,7 @@
         <div class="service">
             <div class="design"></div>
             <h2>Package Tracking</h2>
-            <p>Stay informed with our real-time tracking system, which allows you to monitor yours shipments every step of the way. you can check the ststus of your packages anytime.</p>
+            <p>Stay informed with our real-time tracking system, which allows you to monitor yours shipments every step of the way. you can check the status of your packages anytime.</p>
             <ul>
                     <li>Access tracking information anytime, from any device, whether you're at home or on the go.</li>
                     <li>With our reliable tracking system, you'll always know where your package is, reducing anxiety and uncertinity about your delivery.</li>

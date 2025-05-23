@@ -14,7 +14,7 @@
         <form action="{{ route('track.shipment') }}" method="POST">
             @csrf
             <div class="container1">
-                <input type="text" name="order_id" placeholder="Enter your package number.....">
+                <input type="text" name="order_id" placeholder="Enter your package ID.....">
                 <button type="submit" id="btnsearch">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
