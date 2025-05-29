@@ -254,11 +254,11 @@
                 <h2>ADMIN PANEL</h2>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="admin">Dashboard</a></li>
-                <li><a href="staff">Staff</a></li>
-                <li class="active"><a href="courier">Courier</a></li>
-                <li><a href="complain">Contact</a></li>
-                <li><a href="customer">Customer</a></li>
+                <li class="active"><a href="{{url('admin-dashboard')}}">Dashboard</a></li>
+                <li><a href="{{url('staff')}}"> Staff</a></li>
+                <li><a href="{{url('courier')}}">Courier</a></li>
+                <li><a href="{{url('complain')}}">Contact</a></li>
+                <li><a href="{{url('customer')}}">Customer</a></li>
             </ul>
         </aside>
         <main class="main-content">
@@ -301,6 +301,8 @@
                             <td>
                                 <a href="/courieredit/{{$item->id}}" class="edit-btn">Edit</a>
                                 <a href="/deletecourier/{{$item->id}}" class="edit-btn">Delete</a>
+                                <a href="{{ route('print.courier', $item->id) }}" target="_blank" class="edit-btn">Print</a>
+
                              </td>
                         </tr>
                         @endforeach
@@ -342,8 +344,8 @@
                 </div>
                 <div class="order">
                     <h3>Order Details</h3><br>
-                    <label for="id">Courier id:</label>
-                    <input type="text" id="id" name="order_id" required>
+                    {{-- <label for="id">Courier id:</label> --}}
+                    {{-- <input type="text" id="id" name="order_id" required> --}}
                     <label for="courierLocation">Courier Location:</label>
                     <input type="text" id="courierLocation" name="location" required>
                     <label for="courierWeight">Courier Weight:</label>

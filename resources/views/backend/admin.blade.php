@@ -150,11 +150,11 @@ body {
                 <h2>ADMIN PANEL</h2>
             </div>
             <ul class="sidebar-menu">
-                <li class="active"><a href="#">Dashboard</a></li>
-                <li><a href="staff"> Staff</a></li>
-                <li><a href="courier">Courier</a></li>
-                <li><a href="complain">Contact</a></li>
-                <li><a href="customer">Customer</a></li>
+                <li class="active"><a href="{{url('admin-dashboard')}}">Dashboard</a></li>
+                <li><a href="{{url('staff')}}"> Staff</a></li>
+                <li><a href="{{url('courier')}}">Courier</a></li>
+                <li><a href="{{url('complain')}}">Contact</a></li>
+                <li><a href="{{url('customer')}}">Customer</a></li>
             </ul>
         </aside>
         <main class="main-content">

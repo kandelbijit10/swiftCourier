@@ -94,8 +94,9 @@ public function login(Request $request)
 }
 
 // Show admin dashboard
-function admin(){
+public function admin(){
   $tc = Courier::count('name');
+  // dd($tc);
   $tcus = StaffModel::count('id');
   $Tpick = Courier::where('status', 'Order Pickup')->count();
   $transsit = Courier::where('status', 'In Transit')->count();

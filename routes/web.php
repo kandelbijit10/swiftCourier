@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     
 });
-Route::get('/dashboard', function () { return view('backend.dashboard'); });
+// Route::get('/dashboard', function () { return view('backend.dashboard'); });
 
 Route::post('/logout', function () {
     Auth::logout();
@@ -43,9 +43,9 @@ use App\Http\Controllers\CourierController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StaffController;
 
-Route::get('/adminlogin', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
-Route::post('/admin', [AdminAuthController::class,'login']);
-Route::get('/admin', [AdminController::class,'admin']);
+// Route::get('/adminlogin', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+// Route::post('/admin', [AdminAuthController::class,'login']);
+Route::get('/admin-dashboard', [AdminController::class,'admin'])->middleware('auth');
 // Route::post('/admin', function () {
 //     return view('backend.admin'); 
 // });
@@ -94,3 +94,31 @@ Route::get('/rehash-passwords', function () {
 
     return 'Password rehashing completed!';
 });
+
+Route::get('/admin',[AuthController::class, 'OpenDashboard']);
+
+
+// Staff Route
+// Route::get('/staff', function () {
+//     return view('backend.staff'); 
+// })->name('staff');
+
+Route::get('/admin', function () {
+    return view('backend.admin'); 
+})->name('dashboard');
+
+// // Courier Route
+// Route::get('/courier', function () {
+//     return view('backend.courier'); 
+// })->name('courier');
+
+// // Contact/Complain Route 
+// Route::get('/contact', function () {
+//     return view('backend.complain'); 
+// })->name('contact');
+
+// // Customer Route
+// Route::get('/customer', function () {
+//     return view('backend.customer');
+// })->name('customer');
+Route::get('/printcourier/{id}', [CourierController::class, 'printCourier'])->name('print.courier');

@@ -12,6 +12,7 @@ class StaffController extends Controller
     //
     function staff(){
         $data = StaffModel::get();
+      
         return view('backend.staff',compact('data'));
     }
     function customer(){
