@@ -199,19 +199,18 @@
                 <h2>ADMIN PANEL</h2>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="admin">Dashboard</a></li>
-                <li class="active"><a href="#"> Staff</a></li>
-                <li><a href="courier">Courier</a></li>
-                <li><a href="complain">Contact</a></li>
-                <li><a href="customer">Customer</a></li>
-               
+                <li class="active"><a href="{{url('admin-dashboard')}}">Dashboard</a></li>
+                <li><a href="{{url('staff')}}"> Staff</a></li>
+                <li><a href="{{url('courier')}}">Courier</a></li>
+                <li><a href="{{url('complain')}}">Contact</a></li>
+                <li><a href="{{url('customer')}}">Customer</a></li>
             </ul>
         </aside>
         <main class="main-content">
             <header class="main-header">
                 <h1>CMS Staff</h1>
                 <div class="user-profile">
-                    <img src="{{asset('images/bijit.jpeg')}}" alt="User Profile">
+                    <img src="profile-icon.png" alt="User Profile">
                 </div>
             </header>
             <section class="staff-management">
@@ -256,7 +255,7 @@
     <div id="addStaffModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2>Add Staff!</h2>
+            <h2>Add Staff</h2>
             <form id="addStaffForm" action="/addstaff" method="POST">
                 @csrf
                 <label for="staffId">Staff ID:</label><br>

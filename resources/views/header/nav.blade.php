@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 <header>
-    <img src="images/bee-trio-trackers-high-resolution-logo.png" alt="Logo">
+    <img src="images/mainlogo.png" alt="Logo">
     <button class="hamburger" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>

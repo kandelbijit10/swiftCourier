@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Courier;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 class CourierController extends Controller
 {
     public function courier() {
@@ -38,11 +38,15 @@ function addcourier(Request $request){
     $cus->destination =$request['destination'];
     $cus->r_name =$request['r_name'];
     $cus->r_email =$request['r_email'];
+    
+
+ 
 
     $cus->r_phone =$request['r_phone'];
     $cus->r_address =$request['r_address'];
     $cus->status =$request['status'];
-    $cus->order_id =$request['order_id'];
+    $cus->order_id = rand(100000, 999999); 
+
     $cus->weight =$request['weight'];
     $cus->dimension =$request['dimension'];
     $cus->package =$request['package'];
@@ -107,4 +111,11 @@ function editcourier($id, Request $request){
     return redirect('/courier');
     
 }
+public function printCourier($id)
+{
+    $courier = Courier::findOrFail($id); // Fetch courier by ID
+
+    return view('backend.print', compact('courier'));
+}
+
 }

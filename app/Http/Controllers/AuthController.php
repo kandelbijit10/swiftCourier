@@ -20,6 +20,9 @@ class AuthController extends Controller
     
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
+            if(Auth::user()->role=='admin'){
+                return redirect('admin-dashboard ')->with('message', 'You are logged in!');
+            }
             return redirect()->route('index')->with('message', 'You are logged in!');
         }
     
@@ -49,5 +52,9 @@ class AuthController extends Controller
         }
 
         return redirect(route("register"))->with('message', 'Failed to Create Account');
+    }
+
+    public function OpenDashboard(){
+        return view('backend.admin');
     }
 }

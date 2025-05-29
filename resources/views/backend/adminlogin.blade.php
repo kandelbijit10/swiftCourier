@@ -20,7 +20,7 @@
 
 
 
-<form action="/admin" method="POST">
+<form action="{{route('admin')}}" method="POST">
 
             @csrf
             <div class="input-box">
